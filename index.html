@@ -9,14 +9,14 @@
 <body>
     <h1>Rock Paper Scissors</h1>
     <div class="choices">
-        <div id="paper">
-            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210705223645/paper.jpeg">
+        <div id="paper" class="choice">
+            <img  id = "hand-icon" src="https://media.geeksforgeeks.org/wp-content/uploads/20210705223645/paper.jpeg">
         </div>
-        <div id="rock">
-            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210705223618/default.jpeg" >
+        <div id="rock" class="choice">
+            <img  id = "hand-icon"src="https://media.geeksforgeeks.org/wp-content/uploads/20210705223618/default.jpeg" >
         </div>
-        <div id ="scissor">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa5TaN_shjWHbQvO7kRysJje4mWP6Tt-Ihbg&s">
+        <div id ="scissor" class="choice">
+            <img  id = "hand-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa5TaN_shjWHbQvO7kRysJje4mWP6Tt-Ihbg&s">
         </div>
     </div>
     <div class="score-board">
@@ -27,6 +27,10 @@
         <div class="score">
             <p id="computer-score">0</p>
             <p>Computer</p>
+        </div>
+        <div class="score">
+            <p id="draw-score">0</p>
+            <p>Draw</p>
         </div>
     </div>
     <div class="msg-container">

@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+.choices {
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid bLACK;
+    margin-top: 2rem;
+}
+
+h1 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.choice {
+    height: 20vh;
+    width: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+img {
+    height: 18vh;
+    width: 18vh;
+    border-radius: 50rem;
+}
+
+.score-board {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    border: 2px solid black;
+    background-color: #16213e;
+}
+
+.score {
+    height: 8vh;
+    width: 24vh;
+    border: 0.1rem solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #F1C40F;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    border: none;
+}
+
+.score:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#hand-icon {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#hand-icon:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.msg-container {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+#msg {
+    padding: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    animation: fadeIn 0.5s ease;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
